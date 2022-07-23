@@ -1,11 +1,11 @@
-import { TOGGLE_LOADING, SET_USERS } from "./constants";
+import { TOGGLE_LOADING, SET_USER } from "./constants";
 
 const initialState = {
     isLoading: false,
-    users: [],
+    user: {},
 };
 
-const homeReducer = (state = initialState, action) => {
+const userProfileReducer = (state = initialState, action) => {
     switch (action.type) {
         case TOGGLE_LOADING:
             return {
@@ -13,10 +13,10 @@ const homeReducer = (state = initialState, action) => {
                 isLoading: action.isLoading,
             };
 
-        case SET_USERS:
+        case SET_USER:
             return {
                 ...state,
-                users: action.payload,
+                user: action.payload,
             };
 
         default:
@@ -24,4 +24,4 @@ const homeReducer = (state = initialState, action) => {
     }
 };
 
-export default homeReducer;
+export default userProfileReducer;

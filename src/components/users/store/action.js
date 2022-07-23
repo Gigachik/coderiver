@@ -1,8 +1,8 @@
 import { dashboardApi } from "../../../api/api";
-import { TOGGLE_LOADING, SET_USER } from "./constants";
+import { TOGGLE_LOADING, SET_USERS } from "./constants";
 
-export const setUser = (payload) => ({
-    type: SET_USER,
+export const setUsers = (payload) => ({
+    type: SET_USERS,
     payload,
 });
 export const isLoading = (isLoading) => ({
@@ -12,12 +12,12 @@ export const isLoading = (isLoading) => ({
 
 /* THUNK CREATOR */
 
-export const getUserByID = (id) => async (dispatch) => {
+export const getUsers = () => async (dispatch) => {
     dispatch(isLoading(true));
     try {
-        const data = await dashboardApi.getUserByID(id);
+        const data = await dashboardApi.getUsers();
         dispatch(isLoading(false));
-        dispatch(setUser(data));
+        dispatch(setUsers(data));
     } catch (error) {
         dispatch(isLoading(false));
     }

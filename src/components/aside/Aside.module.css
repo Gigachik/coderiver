@@ -25,7 +25,7 @@
     transition: all 0.2s linear;
 }
 .nav ul li a:hover,
-.nav ul li .active {
+.nav ul li a.active {
     background: rgba(159, 162, 180, 0.08);
     border-left-color: #dde2ff;
     color: #dde2ff;

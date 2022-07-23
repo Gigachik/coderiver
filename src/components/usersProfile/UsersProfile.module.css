@@ -1,0 +1,64 @@
+.user {
+    background: #ffffff;
+
+    border: 1px solid #dfe0eb;
+    border-radius: 8px;
+}
+.user_bg {
+    height: 225px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: bottom;
+}
+.user_info {
+    padding: 0 55px 130px 55px;
+}
+.avatar {
+    display: table;
+    margin: -62px auto 0;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: relative;
+}
+.avatar img {
+    display: block;
+}
+.user_info h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.4px;
+
+    color: #252733;
+    margin-bottom: 15px;
+}
+.user_info h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+
+    color: #797a84;
+}
+.user_info p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+
+    color: #000000;
+    margin-bottom: 25px;
+}
+.user_info a {
+    text-decoration-line: underline;
+
+    color: #3851ff;
+}
+.user_top {
+    text-align: center;
+    margin-bottom: 90px;
+}
+.user_top h2 {
+    margin-bottom: 0;
+}
