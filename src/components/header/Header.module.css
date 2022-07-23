@@ -49,3 +49,6 @@
 
     border: 1.5px solid #f7f8fc;
 }
+.title {
+    text-transform: capitalize;
+}

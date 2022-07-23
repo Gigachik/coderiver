@@ -1,22 +1,23 @@
 import "./App.css";
 import Aside from "./components/aside/Aside";
 import { Navigate, Route, Routes } from "react-router-dom";
-import Home from "./components/home/Home";
-import Users from "./components/users/Users";
-import Filter from "./components/filter/Filter";
+import Home from "./components/users/Users";
+import Users from "./components/usersProfile/UsersProfile";
 import Header from "./components/header/Header";
+import routesByName from "./constants/routesByName";
 
 function App() {
     return (
         <div className="app">
             <Aside />
-
             <div className="main">
                 <Header />
-                <Filter />
                 <Routes>
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/users/:id" element={<Users />} />
+                    <Route path={routesByName.users} element={<Home />} />
+                    <Route
+                        path={routesByName.usersProfile}
+                        element={<Users />}
+                    />
                 </Routes>
             </div>
         </div>
