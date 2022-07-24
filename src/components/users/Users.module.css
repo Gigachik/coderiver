@@ -74,24 +74,11 @@
 .users_sort img {
     margin-right: 8px;
 }
-.distance {
-    font-weight: 700;
-    font-size: 11px;
-    line-height: 14px;
-
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-
-    color: #ffffff;
-    padding: 5px 12px;
-    background: #f12b2c;
-    border-radius: 100px;
-}
-table {
+.table {
     width: 100%;
     border-collapse: collapse;
 }
-table thead th {
+.table thead th {
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
@@ -102,40 +89,6 @@ table thead th {
     text-align: left;
     padding: 12px 32px;
 }
-table tbody tr {
-    cursor: pointer;
-    transition: all 0.2s linear;
-}
-table tbody tr:hover {
-    background: rgba(55, 81, 255, 0.04);
-}
-table tbody td {
-    border-top: 1px solid #dfe0eb;
-    padding: 24px 32px;
-}
-
-table tbody td:last-child {
-    padding-right: 0;
-}
-table tbody p {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-
-    letter-spacing: 0.2px;
-
-    color: #252733;
-}
-table tbody span {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-
-    letter-spacing: 0.1px;
-
-    color: #c5c7cd;
-}
-
 .info {
     display: flex;
     flex-wrap: wrap;

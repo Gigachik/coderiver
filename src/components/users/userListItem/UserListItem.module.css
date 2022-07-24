@@ -1,0 +1,59 @@
+
+.container{
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.container:hover {
+    background: rgba(55, 81, 255, 0.04);
+}
+.container td {
+    border-top: 1px solid #dfe0eb;
+    padding: 24px 32px;
+}
+
+.container td:last-child {
+    padding-right: 0;
+}
+.container p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    letter-spacing: 0.2px;
+
+    color: #252733;
+}
+.container span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    letter-spacing: 0.1px;
+
+    color: #c5c7cd;
+}
+
+.container .distance {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 14px;
+
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 100px;
+}
+.distanceLow{
+    background: #FEC400;
+}
+.distanceNormal{
+    background: #29CC97;
+}
+.distanceHigh{
+    background: #F12B2C;
+}
+.distanceUnDetected{
+    background: #dedede;
+}
